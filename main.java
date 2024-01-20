@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import Box
 // Шаг 3: Наполнение коробки фруктами
 
 // Создайте статический метод getFruitBox(), который будет создавать коробку Box<Fruit> и наполнять ее несколькими фруктами разных типов.
@@ -23,14 +24,22 @@ import java.util.List;
 
 
 
+class Main(){
+//пишу с телефона, поэтому поправь под стандарты языка
+public static void main(){
+    Box<Fruit> box = getFruitBox(["Келпал", "оаулал"])
+}
+       
 
 
-public class main {
-    public class testmain{
-        public static Box<Fruit> getFruitBox(String [] a) {
-            return  ;
+public static Box<Fruit> getFruitBox(String[] a) {
+            Box<Fruit> newBox = new Box<>();
+            for(fr : a){
+                newBox.put(fr); //если не ошибаюсь то должно так работать, писал с телефона, проверь 
+            }
+            return  newBox;
         }
 
-    }
+}    
 
-}
+
